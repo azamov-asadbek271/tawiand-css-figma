@@ -12,41 +12,49 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-slate-900 overflow-x-hidden relative">
-    <div class="round-container fixed ">
-        <div class="round bg-red-400 absolute w-52 h-52 rounded-full ">
-
-            <button id="open" class="absolute  text-3xl text-white focus:outline-none top-24 left-32 h-24">
+<body class="bg-slate-900 overflow-x-hidden ">
+   
+   <div class="container relative w-full mr-auto ml-auto p-10  bg-slate-50 transition-transform delay-500 ease-linear ">
+    <div class="round-container fixed z-30">
+        <div class="round bg-red-400  w-52 h-52 rounded-full relative ">
+    
+            <button id="open" class="absolute   text-white">
                 <i class="fa-solid fa-bars"></i>
             </button>
-
-            <button id="close" class=" absolute  text-3xl text-white focus:outline-none  rotate-90 origin-top-left top-2/3 left-2/4 h-24">
+    
+            <button id="close" class=" absolute  text-white">
                 <i class="fa-solid fa-xmark "></i>
             </button>
+    
         </div>
     </div>
-   <div class="container w-full mr-auto ml-auto p-10  bg-slate-50 transition-transform delay-500 ease-linear">
     <div class="contnet w-2/3   mr-auto ml-auto mt-2 ">
         <h1 class="contnet-heading text-3xl">Amazing Article</h1>
         <span class="content-author italic ">A'zamov Asadbek</span>
         <p class="description mt-4 mb-3 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias debitis quos, eius laborum quidem, impedit temporibus dolor doloremque molestiae fugit assumenda quod numquam quis voluptates repellendus id eos, cupiditate quam non perspiciatis adipisci sunt incidunt. Temporibus, aliquam odit. Illum velit tenetur dicta expedita, ipsa maiores fugit molestias aliquid quisquam ipsum ea ad eius cupiditate sit corrupti iusto optio inventore exercitationem quas veritatis tempore vel non? Autem dicta adipisci perferendis voluptas? Optio earum delectus quod eaque ullam pariatur amet dicta reiciendis magni tempore nulla cum, velit laudantium iusto iure saepe ipsam ad itaque voluptate accusantium dolor praesentium et ab? Quos, non?</p>
         <h3 class="contnet-title text-xl font-bold"> I Love Rain</h3>
         <img class="content-img w-full h-96 mt-4 flex" src="./images/rain-background.jpg" alt=" rain foto">
-        <p class="description mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus corrupti sit tempora recusandae est vitae dolorem obcaecati dignissimos voluptates, harum a at nisi magnam iste reprehenderit maiores in optio. Praesentium debitis culpa dolore placeat autem? Dolor assumenda natus quia illum.
-            
+        <p class="description mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, cupiditate explicabo consectetur, aut numquam nesciunt facere, dolorum voluptatum dolores veritatis cumque quod voluptatem assumenda labore po
         </p>
        
     </div>
   
 
    </div>
-    <div class="site-nav hidden">
-        <ul class="site-list">
-            <li class="site-item"><a class="site-link" href="">HOME</a></li>
-            <li class="site-item"><a class="site-link" href="">ABOUT</a></li>
-            <li class="site-item"><a class="site-link" href="">CONNECT</a></li>
+    <div class="site-nav fixed ">
+        <ul class="site-list flex flex-col gap-2.5">
+            <li class="site-item">
+                <a class="site-link text-white" href="">HOME</a>
+            </li>
+            <li class="site-item">
+                <a class="site-link text-white" href="">ABOUT</a>
+            </li>
+            <li class="site-item">
+                <a class="site-link text-white" href="">CONNECT</a>
+            </li>
         </ul>
     </div>
+    <script src="/app.js"></script>
 </body>
 
 </html>

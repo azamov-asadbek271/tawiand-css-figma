@@ -11,7 +11,72 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    transform-origin: top left;
+  transition: transform 0.5s linear;
+}
 .show-nav {
     transform: rotate(-20deg);
-    transform-origin: top left;
+}
+.container.show-nav + .site-nav li {
+    transform: translate(0);
+    transition-delay: 0.3s;
+}
+.container.show-nav .round {
+    transform: rotate(-70deg);
+}
+
+.round-container {
+   top: -100px;
+   left: -100px;
+}
+.round {
+    transition: transform 0.5s linear;
+}
+
+.round button {
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    font-size: 26px;
+}
+.round button:focus {
+    outline: none;
+}
+
+#open {
+ left: 60%;
+}
+#close {
+ top: 60%;
+ transform: rotate(90deg);
+ transform-origin: top left;
+}
+.site-nav {
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+.site-list {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+}
+.site-list li+ li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+.site-list li+li+li {
+    transform: translateX(-200%);
+    margin-left: 30px;
+}
+.site-item {
+   
+    margin: 30px 0;
+    transition: 0.4s;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+.site-link:hover { 
+    color: #ff7979;
 }
